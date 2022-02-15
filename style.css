@@ -1,0 +1,357 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ***************************** NAV ************************* */
+nav{
+    /*pour cacher tout se qui depasse*/
+    overflow: hidden;
+    background-color: #FFFAE1;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li{
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+} 
+header li a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 18px 16px;
+
+}
+#logo{
+    font-family: fantasy;
+    font-weight: bold;
+    float: left;
+    font-size: 1.8em;
+}
+/* ******************************* IMAGE PRINCIPALE ******************* */
+#imageprincipale{
+    padding-top: 70px;
+    background: url(Media/imageprincipale1.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 84vh;
+}
+#imageprincipale h3{
+    font-size: 5em;
+    
+}
+h1{
+    font-family:monospace;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 10em;
+    margin-top: 70px;
+    text-shadow: -5px 3px 5px black;
+
+}
+#premiertrait{
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #FFFAE1;
+    box-shadow: -9px 5px 5px black;
+
+}
+h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+    text-shadow: -5px 3px 5px black;
+
+}
+/* *************************** PRESENTATION ************************ */
+#presentation{
+    background-color: #FFFAE1;
+    padding: 10px 0px 100px 0;
+    
+}
+#texteintro{
+    padding: 0px 20%;
+}
+#prestation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+    
+}
+.imageprestations h4{
+    /* font-family: monospace; */
+    text-align: center;
+    font-size: 2em;
+    margin: 15px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.imageprestations img{
+    border-radius: 20px;
+    box-shadow: 8px 3px 8px black;
+    height: 950px;
+    /* max-width: 1000px; */
+}
+.imageprestations img:hover{
+    opacity: 0.7;
+    transform:scale(1.05) ;
+    transition: 0.3s ease-in-out;
+}
+/* **************************** TOURISME **************************** */
+#tourisme{
+    height: 1900px;
+    background-color:beige;
+    padding: 1px 2%;
+    box-sizing:content-box;
+}
+#tourisme h2{
+    padding-top: 60px;
+}
+#tourisme #ocean, #tourisme #Chateau, 
+#tourisme #phare, #tourisme #vignoble{
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 8px 3px 8px black;
+} 
+#ocean{
+    background: url(Media/chambre\ \(1\).jpg) no-repeat;
+}
+#Chateau{
+    background: url(Media/chambre\ \(1\).jpg) no-repeat;
+}
+#phare{
+    background: url(Media/chambre\ \(1\).jpg) no-repeat;
+}
+#vignoble{
+    background: url(Media/chambre\ \(1\).jpg) no-repeat;
+}
+#tourisme li{
+    margin: 65px 100px -20px 100px;
+    height: 350px;
+    width: 50%;
+    float: left;
+    box-shadow: 8px 3px 8px black;
+
+}
+#tourisme p{
+    height: 45px;
+    width: 300px;
+    background-color: #01df74;
+    float: right;
+    margin: 150px -190px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 8px 3px 8px black;
+    border-radius: 8px;
+}
+#tourisme ul{
+    max-width: 45%;
+    margin: 0 auto;
+}
+#tourisme #Chateau, #tourisme #vignoble{
+    float: right;
+    
+}
+#Chateau p, #vignoble p{
+    float: left;
+    margin-left: -190px;
+    background-color:cyan ;
+}
+/* **************************** FOOTER *********************** */
+footer{
+    background-color: #6e695f;
+    color: #FFFAE1;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+form{
+    margin: 0 auto;
+    max-width: 900px;
+
+}
+input, textarea, button{
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-family: fantasy;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+textarea{
+    height: 120px;
+    
+}
+button{
+    font-size: 1.5em;
+    background-color: #FFFAE1;
+}
+button:hover{
+    background-color: #e55039;
+    color: #FFFAE1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#deuxiemetrait{
+    height: 1px;
+    width: 75%;
+    background-color: #FFFAE1;
+    margin: 60px auto;
+}
+#copyrighteticons{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright{
+    width: 50%;
+    text-align: left;
+    color: #FFFAE1;
+}
+#icons{
+    width: 50%;
+    text-align: right;
+}
+#icons a{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: #FFFAE1;
+}
+#icons a:hover{
+    transform: scale(1.5);
+    transition:0.1s ;
+}
+
+
+
+/* @media only screen and (max-width: 970px) */
+
+
+@media only screen and (max-width: 970px){
+    h1{
+        font-size: 4em; 
+    }
+    #imageprincipale h3{
+        font-size: 2em;   
+    }
+    header li{
+        font-size: 1.2em;
+    } 
+    header li a{
+        padding: 25px 18px;
+    
+    }
+    #logo{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.7em;
+        margin-top: 0px;
+    }
+    #prestation{
+       /* margin-left: 19%; */
+       
+       
+    }
+    .imageprestations h4{
+        /* font-family: monospace; */
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .imageprestations img{
+        border-radius: 40px;
+        height: 500px;
+        
+    }
+    #tourisme{
+        height: 1700px;
+    }
+    #tourisme li{
+        height: 300px;
+        width: 100%;
+        float: right;
+        margin-bottom: 15px;
+    }
+    #tourisme p{
+        height: 35px;
+        width: 280px;
+        float:left;
+        margin: -35px;
+        font-size: 1.3em;
+        
+    }
+    #tourisme #Chateau, #tourisme #vignoble{
+        float: left;
+    }
+    #Chateau p, #vignoble p{
+        float: right;
+        margin-left:280px;
+    }
+
+
+}
+@media only screen and (max-width: 2530px){
+    .imageprestations img{
+        height: 750px;
+    }
+
+}
+@media only screen and (max-width: 2000px){
+    .imageprestations img{
+        height: 650px;
+    }
+
+}
+@media only screen and (max-width: 1720px){
+    .imageprestations img{
+        height: 550px;
+    }
+
+}
+@media only screen and (max-width: 1452px){
+    .imageprestations img{
+        height: 450px;
+    }
+
+}
+@media only screen and (max-width: 1200px){
+    .imageprestations img{
+        height: 350px;
+    }
+    h1{
+       
+        font-size: 6.5em; 
+    }
+#imageprincipale h3{
+    font-size: 3em;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+}
