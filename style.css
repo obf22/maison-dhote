@@ -1,7 +1,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -58,10 +57,6 @@ header li a{
     background-size: cover;
     height: 84vh;
 }
-#imageprincipale h3{
-    font-size: 5em;
-    
-}
 h1{
     font-family:monospace;
     text-align: center;
@@ -82,7 +77,7 @@ h1{
 h3{
     text-align: center;
     color: antiquewhite;
-    font-size: 3em;
+    font-size: 5em;
     text-shadow: -5px 3px 5px black;
 
 }
@@ -113,7 +108,7 @@ h3{
 .imageprestations img{
     border-radius: 20px;
     box-shadow: 8px 3px 8px black;
-    height: 950px;
+    height: 750px;
     /* max-width: 1000px; */
 }
 .imageprestations img:hover{
@@ -134,6 +129,7 @@ h3{
 #tourisme #ocean, #tourisme #Chateau, 
 #tourisme #phare, #tourisme #vignoble{
     background-size: cover;
+    object-fit: cover;
     border-radius: 20px;
     box-shadow: 8px 3px 8px black;
 } 
@@ -184,7 +180,7 @@ h3{
 }
 /* **************************** FOOTER *********************** */
 footer{
-    background-color: #6e695f;
+    background-color: #63615e;
     color: #FFFAE1;
     text-align: center;
     padding: 20px 0 10px 0;
@@ -250,108 +246,107 @@ button:hover{
 
 
 
-/* @media only screen and (max-width: 970px) */
-
-
-@media only screen and (max-width: 970px){
-    h1{
-        font-size: 4em; 
-    }
-    #imageprincipale h3{
-        font-size: 2em;   
+@media only screen and (max-width: 670px){
+    *{
+        overflow: auto;
     }
     header li{
-        font-size: 1.2em;
-    } 
+        font-size: 0.8em;
+    }
     header li a{
-        padding: 25px 18px;
-    
+        padding: 10px 6px;
     }
     #logo{
-        font-size: 1.5em;
+        font-size: 1.1em;
+    }
+    h1{
+        font-size: 3.5em;
+        max-width: 300px;
+        margin:30px auto;
+    }
+    #imageprincipale h3{
+        font-size: 2em;    
     }
     h2{
-        font-size: 1.7em;
-        margin-top: 0px;
+        padding-top: 5px;
+        font-size: 1.2em;
+    }
+    #presentation{
+        padding: 0px 0px 25px 0px;
+    }
+    #texteintro{
+        padding: 0px 10%;
+    }
+    #texteintro p{
+        font-size: 14px;
     }
     #prestation{
-       /* margin-left: 19%; */
-       
-       
+        padding: 0px 5% 10px 5%;
+        flex-direction: column;    
     }
     .imageprestations h4{
-        /* font-family: monospace; */
-        font-size: 1.5em;
-        font-weight: 500;
+       font-size: 1.4em;
+       padding-bottom: 10px;
     }
+    .imageprestations{
+         text-align: center;
+         padding-bottom: 25px;
+    }
+
     .imageprestations img{
-        border-radius: 40px;
-        height: 500px;
-        
+        bottom: auto; 
+        object-fit: cover;
+        width: 190px;
+        height: 250px;
     }
     #tourisme{
-        height: 1700px;
+        height: 1250px;
+    }
+    #tourisme #Chateau, #tourisme #vignoble{
+        float: none;  
+    }
+    #tourisme h2{
+        padding-top: 20px;
+    }
+    #tourisme ul{
+        max-width: 100%;
+        overflow: visible;
     }
     #tourisme li{
-        height: 300px;
-        width: 100%;
-        float: right;
-        margin-bottom: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 250px;
+        /* float: none; */
     }
     #tourisme p{
         height: 35px;
-        width: 280px;
-        float:left;
-        margin: -35px;
-        font-size: 1.3em;
-        
-    }
-    #tourisme #Chateau, #tourisme #vignoble{
-        float: left;
+        width: 200px;
+        background-color: #fffae18c;
+        float: none;
+        margin: 198px 0 0px 0;
+        font-size: 1em;
+        text-align:center;
     }
     #Chateau p, #vignoble p{
-        float: right;
-        margin-left:280px;
+        float: none;
+        background-color:#fffae18c;
+    }
+    footer{
+        padding: 0;
+    }
+    input, textarea, button{
+        width: 80%;
+        font-size: 1em;
+    }
+    input{
+        height: 8px;
+    }
+    button{
+        width: 50%;
     }
 
+    
+    
+}
 
-}
-@media only screen and (max-width: 2530px){
-    .imageprestations img{
-        height: 750px;
-    }
 
-}
-@media only screen and (max-width: 2000px){
-    .imageprestations img{
-        height: 650px;
-    }
-
-}
-@media only screen and (max-width: 1720px){
-    .imageprestations img{
-        height: 550px;
-    }
-
-}
-@media only screen and (max-width: 1452px){
-    .imageprestations img{
-        height: 450px;
-    }
-
-}
-@media only screen and (max-width: 1200px){
-    .imageprestations img{
-        height: 350px;
-    }
-    h1{
-       
-        font-size: 6.5em; 
-    }
-#imageprincipale h3{
-    font-size: 3em;
-    }
-    h2{
-        font-size: 1.7em;
-    }
-}
