@@ -93,7 +93,7 @@ h3{
 #prestation{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px 10%;
     
 }
@@ -108,7 +108,8 @@ h3{
 .imageprestations img{
     border-radius: 20px;
     box-shadow: 8px 3px 8px black;
-    height: 750px;
+    width: auto;
+    height: 350px;
     /* max-width: 1000px; */
 }
 .imageprestations img:hover{
@@ -158,7 +159,7 @@ h3{
     width: 300px;
     background-color: #01df74;
     float: right;
-    margin: 150px -190px 0 0;
+    margin: 150px -130px 0 0;
     font-size: 1.5em;
     text-align: center;
     padding-top: 15px;
@@ -166,8 +167,12 @@ h3{
     border-radius: 8px;
 }
 #tourisme ul{
-    max-width: 45%;
+    max-width: 40%;
     margin: 0 auto;
+}
+#tourisme li{
+    width: 450px;
+    height: 350px;
 }
 #tourisme #Chateau, #tourisme #vignoble{
     float: right;
@@ -175,7 +180,7 @@ h3{
 }
 #Chateau p, #vignoble p{
     float: left;
-    margin-left: -190px;
+    margin-left: -130px;
     background-color:cyan ;
 }
 /* **************************** FOOTER *********************** */
@@ -246,7 +251,7 @@ button:hover{
 
 
 
-@media only screen and (max-width: 670px){
+@media only screen and (max-width: 780px){
     *{
         overflow: auto;
     }
@@ -296,11 +301,11 @@ button:hover{
     .imageprestations img{
         bottom: auto; 
         object-fit: cover;
-        width: 190px;
-        height: 250px;
+        width: 150px;
+        height: 200px;
     }
     #tourisme{
-        height: 1250px;
+        height: auto;
     }
     #tourisme #Chateau, #tourisme #vignoble{
         float: none;  
@@ -315,16 +320,18 @@ button:hover{
     #tourisme li{
         margin-top: 20px;
         margin-bottom: 20px;
-        height: 250px;
+        height: 150px;
+        width: 150px;
         /* float: none; */
     }
     #tourisme p{
-        height: 35px;
-        width: 200px;
+        height: 20px;
+        width: 150px;
+        padding-top: 5px;
         background-color: #fffae18c;
         float: none;
-        margin: 198px 0 0px 0;
-        font-size: 1em;
+        margin: 50px auto;
+        font-size: 12px;
         text-align:center;
     }
     #Chateau p, #vignoble p{
@@ -348,5 +355,4 @@ button:hover{
     
     
 }
-
 
